@@ -40,7 +40,9 @@ remote_app = client.agent_engines.create(
         "env_vars": {
             "AZURE_TENANT_ID": os.environ.get("AZURE_TENANT_ID", "your-entra-tenant-id-guid"),
             "AZURE_CLIENT_ID": os.environ.get("AZURE_CLIENT_ID", "your-entra-client-id-guid"),
-            "AZURE_KEY_VAULT_NAME": os.environ.get("AZURE_KEY_VAULT_NAME", "your-azure-key-vault-name"),
+            "AZURE_SUBSCRIPTION_ID": os.environ.get("AZURE_SUBSCRIPTION_ID", "your-azure-subscription-id"),
+            "AZURE_RESOURCE_GROUP": os.environ.get("AZURE_RESOURCE_GROUP", "your-azure-resource-group"),
+            "AZURE_VM_NAME": os.environ.get("AZURE_VM_NAME", "your-azure-vm-name"),
         }
     },
 )

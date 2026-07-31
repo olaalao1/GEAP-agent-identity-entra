@@ -1,3 +1,3 @@
-from .entra_kv import get_azure_secret
+from .entra_vm import fetch_agent_identity_token_details, execute_command_on_azure_vm
 
-__all__ = ["get_azure_secret"]
+__all__ = ["fetch_agent_identity_token_details", "execute_command_on_azure_vm"]
