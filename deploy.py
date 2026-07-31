@@ -43,6 +43,11 @@ remote_app = client.agent_engines.create(
             "AZURE_SUBSCRIPTION_ID": os.environ.get("AZURE_SUBSCRIPTION_ID", "your-azure-subscription-id"),
             "AZURE_RESOURCE_GROUP": os.environ.get("AZURE_RESOURCE_GROUP", "your-azure-resource-group"),
             "AZURE_VM_NAME": os.environ.get("AZURE_VM_NAME", "your-azure-vm-name"),
+            # Security & Token Sharing Bypass
+            "GOOGLE_API_PREVENT_AGENT_TOKEN_SHARING_FOR_GCP_SERVICES": "False",
+            # Telemetry & Observability Settings
+            "GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY": "true",
+            "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT": "true",
         }
     },
 )
