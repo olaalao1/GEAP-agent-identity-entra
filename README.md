@@ -82,7 +82,7 @@ To enable Google Cloud Agent Identity to authenticate to Microsoft Entra ID via 
    * **Issuer URL:**  
      `https://sts.googleapis.com/v1/organizations/YOUR_GCP_ORG_ID/locations/global/workloadIdentityPools/agents.global.org-YOUR_GCP_ORG_ID.system.id.goog`
    * **Subject identifier (`sub`):**  
-     `principal://agents.global.org-YOUR_GCP_ORG_ID.system.id.goog/resources/aiplatform/projects/YOUR_GCP_PROJECT_ID/locations/us-central1/reasoningEngines/google-agent-identity-entra`
+     `spiffe://agents.global.org-YOUR_GCP_ORG_ID.system.id.goog/resources/aiplatform/projects/YOUR_GCP_PROJECT_ID/locations/us-central1/reasoningEngines/google-agent-identity-entra`
    * **Audience:** `api://AzureADTokenExchange`
    * **Name:** `gcp-agent-federation-credential`
 4. Click **Add** to save.
